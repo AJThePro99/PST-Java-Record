@@ -1,0 +1,20 @@
+// Functional interface
+interface InterfaceName {
+    returnType methodName(parameters)
+}
+
+
+// Class
+class ClassName {
+    public static void main(String[] args) {
+    
+        // Lambda expression
+        InterfaceName obj (paramters) -> {
+            // method body
+            return value;
+        };
+
+        // Call Lambda
+        obj.methodName(arguments);
+    }
+}
