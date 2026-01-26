@@ -1,5 +1,3 @@
-package w2.s1;
-
 import java.util.Comparator;
 import java.util.Scanner;
 import java.util.stream.IntStream;

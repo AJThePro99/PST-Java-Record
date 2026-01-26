@@ -1,4 +1,4 @@
-class Task1 {
+class Task2 {
 
     // Access and print the element at a given index in an array.
     public static void main(String[] args) {
