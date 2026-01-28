@@ -10,6 +10,7 @@ class Task2 {
         
         System.out.print("K value: ");
         int k = sc.nextInt();
+        sc.close();
         
         var substrings = IntStream.range(0, s.length() - k + 1)
                             .mapToObj(i -> s.substring(i, i + k))

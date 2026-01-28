@@ -34,6 +34,7 @@ class Task1 {
             int marks = sc.nextInt();
             students.add(new Student(name, marks));
         }
+        sc.close();
         
         System.out.print("Value of K: ");
         int k = sc.nextInt();
