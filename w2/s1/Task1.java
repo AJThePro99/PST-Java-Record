@@ -8,24 +8,27 @@ import java.util.Scanner;
 // (all elements same or only one element), print -1.
 
 public class Task1 {
+
     public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in);
-      
-      System.out.print("Input size: ");
-      int n = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
 
-      List<Integer> numbers = new ArrayList<>();
-      for (int i = 0; i < n; i++) {
-        numbers.add(sc.nextInt());
-      }
+        System.out.print("Input size: ");
+        int n = sc.nextInt();
 
-      int secondHighest = numbers.stream()
-                            .distinct()
-                            .sorted(Comparator.reverseOrder())
-                            .skip(1)
-                            .findFirst()
-                            .orElse(-1);
+        List<Integer> numbers = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            numbers.add(sc.nextInt());
+        }
+        sc.close();
 
-      System.out.println("Second highest number is " + secondHighest);
-    }    
+        int secondHighest = numbers
+            .stream()
+            .distinct()
+            .sorted(Comparator.reverseOrder())
+            .skip(1)
+            .findFirst()
+            .orElse(-1);
+
+        System.out.println("Second highest number is " + secondHighest);
+    }
 }

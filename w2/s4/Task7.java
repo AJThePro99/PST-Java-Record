@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 
 public class Task7 {
+
     public static void main(String[] args) {
         int day = 15;
         int month = 4;
@@ -10,9 +11,6 @@ public class Task7 {
     }
 
     public static String findDay(int year, int month, int day) {
-
-        return LocalDate.of(year, month, day)
-                        .getDayOfWeek()
-                        .name();
+        return LocalDate.of(year, month, day).getDayOfWeek().name();
     }
 }
